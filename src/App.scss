@@ -1,0 +1,278 @@
+@import url("./_reset.scss");
+
+.intro_page {
+	width: 100%;
+	height: 100vh;
+	font-family: "dreamgotic";
+	overflow: hidden;
+	background-color: black;
+	position: relative;
+	cursor:
+		url(./img_src/click_anywhere.png) 5 5,
+		auto;
+
+	.intro_box {
+		width: 1152px;
+		height: 70%;
+		margin: 2.5rem auto;
+		border: 4px solid #000000;
+		background-color: #f0f8ff;
+		box-shadow: 20px 20px 0px 2px #d7e2ff;
+		display: flex;
+		justify-content: space-around;
+
+		.intro_left {
+			width: 50%;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+
+			.front {
+				overflow: hidden;
+				text-shadow: 4px 4px 2px #989898;
+
+				p {
+					font-weight: 700;
+					font-size: 10.25rem;
+					transform: translateX(-70%);
+					animation: txt_coming 0.7s ease-in-out forwards;
+
+					&:nth-of-type(2) {
+						transform: translateX(70%);
+						animation: txt_coming 0.7s ease-in-out forwards;
+					}
+				}
+			}
+
+			.dev {
+				overflow: hidden;
+				text-shadow: 4px 4px 2px #989898;
+				p {
+					text-align: right;
+					font-weight: 100;
+					font-size: 80px;
+					transform: translateY(100%);
+					animation: txt_coming 0.7s ease-in-out forwards;
+					animation-delay: 1s;
+				}
+			}
+		}
+
+		.intro_right {
+			width: 40%;
+			height: 80%;
+			margin: auto 0;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+
+			.txt {
+				width: 80%;
+
+				p {
+					font-weight: 100;
+					line-height: 30px;
+					color: rgb(0, 0, 0, 0.5);
+				}
+			}
+
+			.portfolio {
+				font-weight: 700;
+				width: 90%;
+				overflow: hidden;
+				color: #989898;
+				text-shadow: 4px 4px 2px #000000;
+
+				p {
+					font-size: 120px;
+					padding: 0 10px;
+					transform: translateX(-90%);
+					animation: txt_coming 0.7s ease-in-out forwards;
+					animation-delay: 1.8s;
+
+					&:nth-of-type(2) {
+						text-align: right;
+						transform: translateX(90%);
+					}
+				}
+			}
+		}
+	}
+
+	.txt_con {
+		position: absolute;
+		bottom: -2%;
+		transform: translateY(15%);
+		display: flex;
+
+		span {
+			padding: 0 1rem;
+			white-space: nowrap;
+			display: inline-block;
+			font-weight: 700;
+			font-size: 120px;
+			text-align: center;
+			color: rgba(255, 255, 255, 0.4);
+			animation: txt_flow 25s linear infinite;
+		}
+	}
+}
+
+@keyframes txt_coming {
+	100% {
+		transform: translate(0%);
+	}
+}
+
+@keyframes txt_flow {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@media (max-width: 1280px) {
+	.intro_page {
+		.intro_box {
+			width: 900px;
+			.intro_left {
+				.front {
+					p {
+						font-size: 8.25rem;
+						&:nth-of-type(2) {
+						}
+					}
+				}
+				.dev {
+					p {
+						font-size: 60px;
+					}
+				}
+			}
+			.intro_right {
+				.txt {
+					p {
+						font-size: 14px;
+					}
+				}
+				.portfolio {
+					p {
+						font-size: 90px;
+						&:nth-of-type(2) {
+						}
+					}
+				}
+			}
+		}
+
+		.txt_con {
+			span {
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.intro_page {
+		.intro_box {
+			width: 600px;
+			height: 80%;
+			padding: 2rem 0;
+			flex-wrap: wrap;
+			.intro_left {
+				width: 80%;
+				height: 50%;
+				.front {
+					p {
+						font-size: 7.25rem;
+					}
+				}
+				.dev {
+					p {
+						font-size: 50px;
+					}
+				}
+			}
+			.intro_right {
+				width: 80%;
+				height: 50%;
+				align-items: flex-end;
+				.txt {
+					width: 100%;
+					p {
+						font-size: 14px;
+					}
+				}
+				.portfolio {
+					width: 70%;
+					p {
+						font-size: 70px;
+					}
+				}
+			}
+		}
+
+		.txt_con {
+			span {
+			}
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.intro_page {
+		.intro_box {
+			width: 80%;
+			height: 70%;
+			margin: 5.5rem auto;
+			padding: 1rem;
+			flex-wrap: wrap;
+			align-items: center;
+			.intro_left {
+				width: 80%;
+				height: 40%;
+				.front {
+					p {
+						font-size: 3.25rem;
+					}
+				}
+				.dev {
+					p {
+						font-size: 30px;
+					}
+				}
+			}
+			.intro_right {
+				width: 80%;
+				height: 50%;
+				margin: 0;
+				align-items: flex-end;
+				.txt {
+					width: 100%;
+					p {
+						font-size: 12px;
+						line-height: 20px;
+					}
+				}
+				.portfolio {
+					width: 100%;
+					text-align: right;
+					p {
+						font-size: 46px;
+						&:nth-of-type(1){
+							padding-right: 3rem;
+						}
+					}
+				}
+			}
+		}
+
+		.txt_con {
+			span {font-size: 80px;
+			}
+		}
+	}
+}

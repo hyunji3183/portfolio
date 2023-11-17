@@ -1,0 +1,596 @@
+@import url("./_reset.scss");
+header.on {
+  height: 0px;
+  transition: 1.5s;
+}
+header.on .headerbox {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px dashed #b1c7ff;
+  transition: 1.5s;
+}
+header .headerbox {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 3s;
+}
+header .headerbox h1 {
+  width: 100px;
+}
+header .headerbox h1 img {
+  width: 60%;
+}
+header .headerbox nav {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "dreamgotic";
+  font-weight: 300;
+}
+header .headerbox nav a {
+  letter-spacing: 2px;
+  color: #707070;
+}
+header .headerbox nav a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #b1c7ff;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 200ms ease-in-out;
+}
+header .headerbox nav a:hover {
+  color: #000;
+}
+header .headerbox nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.about_page {
+  font-family: "dreamgotic";
+  width: 100%;
+  height: 100vh;
+  padding: 200px 0;
+}
+.about_page .about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.7rem 0;
+}
+.about_page .about .about_left {
+  width: 30%;
+}
+.about_page .about .about_left .profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about_page .about .about_left .profile > p {
+  width: 70%;
+  padding-bottom: 3rem;
+}
+.about_page .about .about_left .profile > p img {
+  width: 100%;
+}
+.about_page .about .about_left .profile .info_data.on {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+}
+.about_page .about .about_left .profile .info_data.on .kakao_qr {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  cursor: pointer;
+}
+.about_page .about .about_left .profile .info_data.on .kakao_qr img {
+  width: 90%;
+}
+.about_page .about .about_left .profile .info_data.on div {
+  display: none;
+}
+.about_page .about .about_left .profile .info_data {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+}
+.about_page .about .about_left .profile .info_data .kakao_qr {
+  display: none;
+}
+.about_page .about .about_left .profile .info_data div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.about_page .about .about_left .profile .info_data div p {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-left: 3px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.about_page .about .about_left .profile .info_data div p:nth-of-type(1)::before {
+  content: "\e7e9";
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.about_page .about .about_left .profile .info_data div p:nth-of-type(2)::before {
+  content: "\e325";
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.about_page .about .about_left .profile .info_data div p:nth-of-type(2)::after {
+  content: "\e409";
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+}
+.about_page .about .about_left .profile .info_data div p:nth-of-type(3)::before {
+  content: "\e158";
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.about_page .about .about_right {
+  width: 60%;
+}
+.about_page .about .about_right b {
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  display: inline-block;
+}
+.about_page .about .about_right b span {
+  padding: 0.5rem 0;
+}
+.about_page .about .about_right b span::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #b1c7ff;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 200ms ease-in-out;
+}
+.about_page .about .about_right b span:hover::after {
+  transform: scaleX(1);
+}
+.about_page .about .about_right .about_me p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+.about_page .about .about_right .about_me span {
+  line-height: 1.5rem;
+  display: inline-block;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.about_page .about .about_right .Education p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+.about_page .about .about_right .Education .edu_data {
+  display: flex;
+  flex-direction: column;
+}
+.about_page .about .about_right .Education .edu_data span {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.skill_page {
+  font-family: "dreamgotic";
+  width: 100%;
+  height: 100vh;
+}
+.skill_page .color_box {
+  width: 100%;
+  text-align: center;
+  background-color: #d7e2ff;
+}
+.skill_page .color_box p {
+  font-family: "Blacksword";
+  font-weight: 400;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 8px;
+}
+.skill_page .skill {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.skill_page .skill .skill_left {
+  width: 40%;
+}
+.skill_page .skill .skill_left .skill_left_top {
+  min-height: 370px;
+  padding: 1rem 0;
+}
+.skill_page .skill .skill_left .skill_left_top > p {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #5786ff;
+  border-top: 2px solid #5786ff;
+  font-weight: 300;
+  font-size: 1.375rem;
+}
+.skill_page .skill .skill_left .skill_left_top ul li {
+  margin: 0.5rem 0;
+  border: 1px solid #b1c7ff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #b1c7ff;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_name {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_name p {
+  text-align: center;
+  width: 40%;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_name p img {
+  width: 100%;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_name span {
+  width: 50%;
+  font-weight: 300;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_level {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_level span {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid #b1c7ff;
+}
+.skill_page .skill .skill_left .skill_left_top ul li .contents_box .skill_level .active {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #b1c7ff;
+}
+.skill_page .skill .skill_left .skill_left_bottom {
+  min-height: 370px;
+  padding: 1rem 0;
+}
+.skill_page .skill .skill_left .skill_left_bottom > p {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #5786ff;
+  border-top: 2px solid #5786ff;
+  font-weight: 300;
+  font-size: 1.375rem;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li {
+  margin: 0.5rem 0;
+  border: 1px solid #b1c7ff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #b1c7ff;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_name {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_name p {
+  text-align: center;
+  width: 40%;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_name p img {
+  width: 100%;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_name span {
+  width: 50%;
+  font-weight: 300;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_level {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_level span {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid #b1c7ff;
+}
+.skill_page .skill .skill_left .skill_left_bottom ul li .contents_box .skill_level .active {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #b1c7ff;
+}
+.skill_page .skill .skill_right {
+  width: 40%;
+}
+.skill_page .skill .skill_right .skill_right_top {
+  min-height: 370px;
+  padding: 1rem 0;
+}
+.skill_page .skill .skill_right .skill_right_top > p {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #5786ff;
+  border-top: 2px solid #5786ff;
+  font-weight: 300;
+  font-size: 1.375rem;
+}
+.skill_page .skill .skill_right .skill_right_top ul li {
+  margin: 0.5rem 0;
+  border: 1px solid #b1c7ff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #b1c7ff;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_name {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_name p {
+  text-align: center;
+  width: 40%;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_name p img {
+  width: 100%;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_name span {
+  width: 50%;
+  font-weight: 300;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_level {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_level span {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid #b1c7ff;
+}
+.skill_page .skill .skill_right .skill_right_top ul li .contents_box .skill_level .active {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #b1c7ff;
+}
+.skill_page .skill .skill_right .skill_right_bottom {
+  min-height: 370px;
+  padding: 1rem 0;
+}
+.skill_page .skill .skill_right .skill_right_bottom > p {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #5786ff;
+  border-top: 2px solid #5786ff;
+  font-weight: 300;
+  font-size: 1.375rem;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li {
+  margin: 0.5rem 0;
+  border: 1px solid #b1c7ff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #b1c7ff;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_name {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_name p {
+  text-align: center;
+  width: 40%;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_name p img {
+  width: 100%;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_name span {
+  width: 50%;
+  font-weight: 300;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_level {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_level span {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid #b1c7ff;
+}
+.skill_page .skill .skill_right .skill_right_bottom ul li .contents_box .skill_level .active {
+  border-radius: 6px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #b1c7ff;
+}
+
+.project_page {
+  font-family: "dreamgotic";
+  width: 100%;
+  height: 100vh;
+}
+.project_page .color_box {
+  width: 100%;
+  text-align: center;
+  background-color: #d7e2ff;
+}
+.project_page .color_box p {
+  font-family: "Blacksword";
+  font-weight: 400;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 8px;
+}
+.project_page .swiper {
+  width: 70%;
+  height: 80%;
+  padding: 5rem 0;
+}
+.project_page .swiper .swiper-slide .project_list {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  border: 2px dashed #d7e2ff;
+}
+.project_page .swiper .swiper-slide .project_list .pro_left {
+  width: 40%;
+}
+.project_page .swiper .swiper-slide .project_list .pro_left ul {
+  width: 100%;
+  height: 100%;
+}
+.project_page .swiper .swiper-slide .project_list .pro_left ul li {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project_page .swiper .swiper-slide .project_list .pro_left ul li p {
+  width: 90%;
+}
+.project_page .swiper .swiper-slide .project_list .pro_left ul li p img {
+  width: 100%;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right {
+  font-weight: 200;
+  width: 55%;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right b {
+  font-size: 24px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .date p {
+  color: #5786ff;
+  font-size: 20px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .date span {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .language p {
+  color: #5786ff;
+  font-size: 20px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .language span {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .program p {
+  color: #5786ff;
+  font-size: 20px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .program span {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .description p {
+  color: #5786ff;
+  font-size: 20px;
+}
+.project_page .swiper .swiper-slide .project_list .pro_right .pro_text .description span {
+  font-size: 16px;
+  padding-left: 10px;
+}

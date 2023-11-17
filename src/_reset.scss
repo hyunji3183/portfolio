@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor:
+  url("./img_src/click.png") 5 5,
+  auto;
+}
+
+img,
+video {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+button,
+input {
+  border: none;
+  outline-style: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+// 노토산스
+@font-face {
+  src: url("./font/NotoSansKR/NotoSansKR-Black.otf") format("truetype");
+  font-family: "NotoSansKR-Black";
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("./font/NotoSansKR/NotoSansKR-Bold.otf") format("truetype");
+  font-family: "NotoSansKR-Bold";
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("./font/NotoSansKR/NotoSansKR-Light.otf") format("truetype");
+  font-family: "NotoSansKR-Light";
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("./font/NotoSansKR/NotoSansKR-Medium.otf") format("truetype");
+  font-family: "NotoSansKR-Medium";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("./font/NotoSansKR/NotoSansKR-Regular.otf") format("truetype");
+  font-family: "NotoSansKR-Regular";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("./font/NotoSansKR/NotoSansKR-Thin.otf") format("truetype");
+  font-family: "NotoSansKR-Thin";
+  font-weight: 100;
+}
+
+// 칸타타
+@font-face {
+  src: url("./font/CantataOne/CantataOne-Regular.ttf") format("truetype");
+  font-family: "CantataOne-Regular";
+}
+
+//드림고딕
+@font-face {
+  src: url("./font/a드림고딕1.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 100;
+}
+
+@font-face {
+  src: url("./font/a드림고딕2.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 200;
+}
+
+@font-face {
+  src: url("./font/a드림고딕3.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("./font/a드림고딕4.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("./font/a드림고딕5.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("./font/a드림고딕6.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("./font/a드림고딕7.otf") format("truetype");
+  font-family: "dreamgotic";
+  font-weight: 700;
+}
+
+// zelda
+@font-face {
+  src: url("./font/The_Wild_Breath_of_Zelda.otf") format("truetype");
+  font-family: "font_zelda";
+  font-weight: 200;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+// 네오둥근모
+@font-face {
+  font-family: "neodgm_code";
+  src: url("./font/neodgm_code.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UhBee_Hyeki";
+  src: url("./font/UhBee_Hyeki.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UhBee_Hyeki_Bold";
+  src: url("./font/UhBee_Hyeki_Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("./font/Blacksword.otf") format("truetype");
+  font-family: "Blacksword";
+  font-weight: 400;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
