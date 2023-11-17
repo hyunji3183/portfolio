@@ -17,7 +17,8 @@ body::-webkit-scrollbar-track {
 body {
     cursor:
         url("./img_src/mouse.png") 5 5,
-        auto;}
+        auto;
+}
 
 header.on {
     height: 0px;
@@ -169,7 +170,7 @@ header {
                         align-items: flex-start;
                         justify-content: space-between;
                         flex-direction: column;
-                        
+
                         p {
                             font-weight: 300;
                             font-size: 1rem;
@@ -1164,9 +1165,7 @@ aside {
     }
 }
 
-.none {
-    opacity: 0;
-}
+.none {opacity: 0;}
 
 .frame_in {
     opacity: 1;
@@ -1187,7 +1186,6 @@ aside {
 }
 
 @media (max-width: 1280px) {
-
     header {
         height: 72px;
         .headerbox {
@@ -1244,67 +1242,6 @@ aside {
                         .kakao_qr {
                             display: none;
                         }
-
-                        div {
-                            display: flex;
-                            align-items: flex-start;
-                            justify-content: space-between;
-                            flex-direction: column;
-
-                            p {
-                                font-weight: 300;
-                                font-size: 16px;
-                                padding: 0.8rem;
-                                border-left: 3px solid black;
-                                display: flex;
-                                align-items: center;
-
-                                &:nth-of-type(1)::before {
-                                    content: "\e7e9";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 20px;
-                                    font-size: 1.2rem;
-                                    text-align: center;
-                                }
-
-                                &:nth-of-type(2) {
-                                    cursor:
-                                        url("./img_src/click.png") 5 5,
-                                        auto;
-                                }
-
-                                &:nth-of-type(2)::before {
-                                    content: "\e325";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 20px;
-                                    font-size: 1.2rem;
-                                    text-align: center;
-                                }
-
-                                &:nth-of-type(2)::after {
-                                    content: "\e409";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 20px;
-                                    height: 20px;
-                                    font-size: 1rem;
-                                }
-
-                                &:nth-of-type(3)::before {
-                                    content: "\e158";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 20px;
-                                    font-size: 1.2rem;
-                                    text-align: center;
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1313,13 +1250,7 @@ aside {
                 width: 92%;
 
                 b {
-                    font-weight: 500;
-                    font-size: 2rem;
-                    padding: 2rem 0;
-                    display: inline-block;
-
                     span {
-                        padding: 0.5rem 0;
                         display: inline-block;
                         width: 100%;
 
@@ -1330,36 +1261,16 @@ aside {
                 }
 
                 .about_me {
-                    p {
-                        font-weight: 500;
-                        font-size: 1.25rem;
-                        padding: 0.5rem 0;
-                    }
-
                     span {
-                        line-height: 1.5rem;
-                        display: inline-block;
                         padding: 0.5rem 0;
                         font-size: 0.8125rem;
-                        font-weight: 200;
                     }
                 }
 
                 .Education {
-                    p {
-                        font-weight: 500;
-                        font-size: 1.25rem;
-                        padding: 1rem 0;
-                    }
-
                     .edu_data {
-                        display: flex;
-                        flex-direction: column;
-
                         span {
-                            padding: 0.5rem 0;
                             font-size: 0.8125rem;
-                            font-weight: 200;
                         }
                     }
                 }
@@ -1368,46 +1279,25 @@ aside {
     }
 
     .skill_page {
-        font-family: "dreamgotic";
-        width: 100%;
-        height: 100vh;
-
         .color_box {
             width: 90%;
-            margin: 0 auto;
 
             p {
-                width: 100%;
-                font-family: "Blacksword";
-                font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 &::before {
                     content: "";
                     display: inline-block;
                     width: 35%;
-                    height: 2px;
-                    background-color: black;
                 }
                 &::after {
                     content: "";
                     display: inline-block;
                     width: 35%;
-                    height: 2px;
-                    background-color: black;
                 }
             }
         }
 
         .skill {
             width: 90%;
-            margin: 0 auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
             padding: 80px 0;
 
             .skill_left {
@@ -1415,76 +1305,32 @@ aside {
 
                 .skill_left_top {
                     min-height: 340px;
-                    padding: 1rem 0;
 
                     > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
                         font-size: 1.2rem;
                     }
 
                     ul {
                         li {
                             margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
                             .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
                                 .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
                                     span {
-                                        width: 50%;
-                                        font-weight: 300;
                                         font-size: 0.875rem;
                                     }
                                 }
 
                                 .skill_level {
                                     width: 42%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
 
                                     span {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 22px;
                                         height: 22px;
-                                        background-color: transparent;
-                                        background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
                                     }
 
                                     .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 22px;
                                         height: 22px;
-                                        background-color: #b1c7ff;
                                     }
                                 }
                             }
@@ -1498,76 +1344,32 @@ aside {
 
                 .skill_right_top {
                     min-height: 340px;
-                    padding: 1rem 0;
 
                     > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
                         font-size: 1.2rem;
                     }
 
                     ul {
                         li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
                             .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
                                 .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
                                     span {
-                                        width: 50%;
-                                        font-weight: 300;
                                         font-size: 0.875rem;
                                     }
                                 }
 
                                 .skill_level {
                                     width: 42%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
 
                                     span {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 22px;
                                         height: 22px;
-                                        background-color: transparent;
                                         background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
                                     }
 
                                     .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 22px;
                                         height: 22px;
-                                        background-color: #b1c7ff;
                                     }
                                 }
                             }
@@ -1577,76 +1379,31 @@ aside {
 
                 .skill_right_bottom {
                     min-height: 340px;
-                    padding: 1rem 0;
 
                     > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
                         font-size: 1.2rem;
                     }
 
                     ul {
                         li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
                             .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
                                 .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
                                     span {
-                                        width: 50%;
-                                        font-weight: 300;
                                         font-size: 0.875rem;
                                     }
                                 }
 
                                 .skill_level {
                                     width: 42%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
                                     span {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 22px;
                                         height: 22px;
-                                        background-color: transparent;
                                         background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
                                     }
 
                                     .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 22px;
                                         height: 22px;
-                                        background-color: #b1c7ff;
                                     }
                                 }
                             }
@@ -1658,44 +1415,27 @@ aside {
     }
 
     .project_page {
-        font-family: "dreamgotic";
-        width: 100%;
-        height: 100vh;
 
         .color_box {
             width: 90%;
-            margin: 0 auto;
 
             p {
-                width: 100%;
-                font-family: "Blacksword";
-                font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 &::before {
                     content: "";
                     display: inline-block;
                     width: 35%;
                     height: 2px;
-                    background-color: black;
                 }
                 &::after {
                     content: "";
                     display: inline-block;
                     width: 35%;
                     height: 2px;
-                    background-color: black;
                 }
             }
         }
 
         .swiper {
-            width: 100%;
-            height: 85%;
-            padding: 5rem 0;
             .swiper-button-prev,
             .swiper-button-next {
                 margin: 0;
@@ -1704,24 +1444,14 @@ aside {
             .swiper-slide {
                 .project_list {
                     width: 90%;
-                    height: 100%;
-                    margin: 0 auto;
                     padding: 1rem;
 
                     .pro_box {
-                        height: 100%;
                         min-height: 600px;
-                        display: flex;
-                        align-items: center;
                         justify-content: space-between;
-                        border: 4px dashed #d7e2ff;
-                        border-radius: 10px;
 
                         .pro_left {
                             width: 40%;
-                            display: flex;
-                            align-items: center;
-                            flex-direction: column;
 
                             ul {
                                 width: 240px;
@@ -1732,12 +1462,6 @@ aside {
                                 li {
                                     position: absolute;
                                     bottom: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    text-align: center;
 
                                     img {
                                         width: 240px;
@@ -1747,65 +1471,27 @@ aside {
 
                             .btn_box {
                                 width: 44%;
-                                padding: 4px 0;
-                                margin: 14px 0px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-around;
-                                border-radius: 4px;
-                                background-color: rgba(215, 226, 255, 0.4);
-
-                                span {
-                                    display: inline-block;
-                                    color: #a5a5a5;
-                                    cursor:
-                                        url("./img_src/click.png") 5 5,
-                                        auto;
-
-                                    &:nth-of-type(1) {
-                                        width: 45%;
-                                        text-align: left;
-                                    }
-
-                                    &:nth-of-type(2) {
-                                        width: 45%;
-                                        text-align: right;
-                                    }
-                                }
                             }
                         }
 
                         .pro_right {
-                            font-weight: 200;
                             width: 57%;
                             height: 75%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-around;
 
                             b {
-                                display: inline-block;
-                                font-size: 1.3rem;
                                 padding: 1.2rem 0;
+                                font-size: 1.3rem;
                             }
 
                             .pro_text {
-                                width: 90%;
                                 height: 90%;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: flex-start;
-                                flex-direction: column;
 
                                 .date {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .date_txt {
-                                        padding-left: 10px;
-
                                         span {
                                             font-size: 0.9rem;
                                             padding-left: 6px;
@@ -1815,12 +1501,10 @@ aside {
 
                                 .language {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .language_txt {
-                                        padding-left: 10px;
 
                                         span {
                                             font-size: 0.9rem;
@@ -1832,12 +1516,10 @@ aside {
 
                                 .program {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .program_txt {
-                                        padding-left: 10px;
 
                                         span {
                                             font-size: 0.9rem;
@@ -1848,16 +1530,13 @@ aside {
 
                                 .description {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .description_txt {
-                                        padding-left: 10px;
 
                                         span {
                                             font-size: 0.9rem;
-                                            line-height: 26px;
                                         }
                                     }
                                 }
@@ -1870,146 +1549,73 @@ aside {
     }
 
     .contact_page {
-        font-family: "dreamgotic";
-        width: 100%;
         height: 56vh;
-        position: relative;
 
         .color_box {
             width: 90%;
-            margin: 0 auto;
 
             p {
                 width: 100%;
-                font-family: "Blacksword";
-                font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 &::before {
                     content: "";
                     display: inline-block;
                     width: 35%;
                     height: 2px;
-                    background-color: black;
                 }
                 &::after {
                     content: "";
                     display: inline-block;
                     width: 35%;
                     height: 2px;
-                    background-color: black;
                 }
-            }
-        }
-
-        .flip.on {
-            transform: rotateY(180deg);
-
-            .back {
-                transform: rotateY(180deg);
             }
         }
 
         .flip {
-            width: 600px;
-            height: 300px;
-            margin: 5rem auto;
-            transition: all 0.5s;
-            transform-style: preserve-3d;
-            position: relative;
-            cursor:
-                url("./img_src/click.png") 5 5,
-                auto;
-
             .back {
-                width: 100%;
-                height: 100%;
-                border: 2px dashed #a1bbff;
-                background-color: #f9fbff;
                 padding: 3rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
-
                 p {
                     width: 65%;
-
-                    img {
-                        width: 100%;
-                    }
                 }
             }
 
             .front {
-                height: 100%;
-                border: 2px dashed #a1bbff;
-                background-color: #f9fbff;
-                padding: 2rem;
-                display: flex;
-                align-items: center;
                 justify-content: space-between;
-                backface-visibility: hidden;
-                position: absolute;
-                top: 0;
 
                 .con_left {
-                    font-weight: 200;
                     width: 45%;
-                    height: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
 
                     b {
-                        display: inline-block;
                         font-size: 1.3rem;
                     }
 
                     .con_text {
-                        width: 100%;
                         height: 50%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        flex-direction: column;
 
                         .email {
                             p {
-                                color: #5786ff;
                                 font-size: 1.2rem;
                             }
 
                             span {
                                 font-size: 0.9rem;
-                                padding-left: 10px;
                             }
                         }
 
                         .Github {
                             p {
-                                color: #5786ff;
                                 font-size: 1.2rem;
                             }
 
                             span {
                                 font-size: 0.9rem;
-                                padding-left: 10px;
                             }
                         }
                     }
                 }
 
                 .con_right {
-                    width: 45%;
-
                     p {
-                        text-align: center;
-
                         img {
                             width: 80%;
                         }
@@ -2024,110 +1630,43 @@ aside {
     header.on {
         height: 72px;
 
-        transition: 1.5s;
-        z-index: 10;
-
         .headerbox {
             opacity: 1;
-            transition: 0.5s;
         }
     }
 
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 72px;
-        z-index: 10;
 
         .headerbox {
             width: 90%;
-            margin: 0 auto;
             padding: 0.5rem 0;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: 3s;
             position: relative;
 
-            h1 {
-                width: 100px;
-
-                img {
-                    width: 60%;
-                }
-            }
-
             span {
-                cursor:
-                    url("./img_src/click.png") 5 5,
-                    auto;
-                display: none;
                 color: #6f6f6f;
-            }
-
-            nav {
-                width: 500px;
-                align-items: center;
-                justify-content: space-between;
-                font-family: "dreamgotic";
-                font-weight: 300;
-
-                a {
-                    letter-spacing: 2px;
-                    color: #707070;
-
-                    &::after {
-                        display: block;
-                        content: "";
-                        border-bottom: solid 3px #b1c7ff;
-                        transform: scaleX(0);
-                        transform-origin: 0% 50%;
-                        transition: transform 200ms ease-in-out;
-                    }
-
-                    &:hover {
-                        color: #000;
-                    }
-
-                    &:hover::after {
-                        transform: scaleX(1);
-                    }
-                }
             }
         }
     }
 
     .about_page {
-        font-family: "dreamgotic";
-        width: 100%;
-        height: 100vh;
         padding: 74px 0;
 
         .about {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             flex-direction: column;
             width: 90%;
-            margin: 0 auto;
             padding: 3.7rem 0;
 
             .about_left {
-                width: 90%;
+                width: 100%;
 
                 .profile {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
+                    justify-content: center;
                     flex-direction: row;
                     text-align: center;
 
                     > p {
                         width: 45%;
-                        padding-bottom: 3rem;
 
                         img {
                             width: 70%;
@@ -2136,23 +1675,10 @@ aside {
 
                     .info_data.on {
                         width: 40%;
-                        display: flex;
-                        flex-direction: column;
                         text-align: center;
-                        min-height: 180px;
 
                         .kakao_qr {
                             display: inline-block;
-                            width: 180px;
-                            height: 180px;
-                            text-align: center;
-                            cursor:
-                                url("./img_src/click.png") 5 5,
-                                auto;
-
-                            img {
-                                width: 90%;
-                            }
                         }
 
                         div {
@@ -2164,68 +1690,9 @@ aside {
                         width: 40%;
                         display: flex;
                         flex-direction: column;
-                        min-height: 180px;
 
                         .kakao_qr {
                             display: none;
-                        }
-
-                        div {
-                            display: flex;
-                            align-items: flex-start;
-                            justify-content: space-between;
-                            flex-direction: column;
-
-                            p {
-                                font-weight: 300;
-                                font-size: 16px;
-                                padding: 0.8rem;
-                                border-left: 3px solid black;
-                                display: flex;
-                                align-items: center;
-                                cursor:
-                                    url("./img_src/click.png") 5 5,
-                                    auto;
-
-                                &:nth-of-type(1)::before {
-                                    content: "\e7e9";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 20px;
-                                    font-size: 1.2rem;
-                                    text-align: center;
-                                }
-
-                                &:nth-of-type(2)::before {
-                                    content: "\e325";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 20px;
-                                    font-size: 1.2rem;
-                                    text-align: center;
-                                }
-
-                                &:nth-of-type(2)::after {
-                                    content: "\e409";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 20px;
-                                    height: 20px;
-                                    font-size: 1rem;
-                                }
-
-                                &:nth-of-type(3)::before {
-                                    content: "\e158";
-                                    font-family: "Material Symbols Outlined";
-                                    display: inline-block;
-                                    width: 30px;
-                                    height: 20px;
-                                    font-size: 1.2rem;
-                                    text-align: center;
-                                }
-                            }
                         }
                     }
                 }
@@ -2235,13 +1702,7 @@ aside {
                 width: 100%;
 
                 b {
-                    font-weight: 500;
-                    font-size: 2rem;
-                    padding: 2rem 0;
-                    display: inline-block;
-
                     span {
-                        padding: 0.5rem 0;
                         display: inline-block;
                         width: 100%;
 
@@ -2253,35 +1714,23 @@ aside {
 
                 .about_me {
                     p {
-                        font-weight: 500;
-                        font-size: 1.25rem;
                         padding: 0.5rem 0;
                     }
 
                     span {
-                        line-height: 1.5rem;
-                        display: inline-block;
                         padding: 0.5rem 0;
                         font-size: 0.8125rem;
-                        font-weight: 200;
                     }
                 }
 
                 .Education {
                     p {
-                        font-weight: 500;
-                        font-size: 1.25rem;
-                        padding: 1rem 0;
                     }
 
                     .edu_data {
-                        display: flex;
-                        flex-direction: column;
 
                         span {
-                            padding: 0.5rem 0;
                             font-size: 0.8125rem;
-                            font-weight: 200;
                         }
                     }
                 }
@@ -2290,46 +1739,25 @@ aside {
     }
 
     .skill_page {
-        font-family: "dreamgotic";
-        width: 100%;
-        height: 100vh;
-
         .color_box {
             width: 90%;
-            margin: 0 auto;
 
             p {
-                width: 100%;
-                font-family: "Blacksword";
-                font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 &::before {
                     content: "";
                     display: inline-block;
                     width: 30%;
-                    height: 2px;
-                    background-color: black;
                 }
                 &::after {
                     content: "";
                     display: inline-block;
                     width: 30%;
-                    height: 2px;
-                    background-color: black;
                 }
             }
         }
 
         .skill {
             width: 90%;
-            margin: 0 auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
             padding: 80px 0;
 
             .skill_left {
@@ -2337,76 +1765,31 @@ aside {
 
                 .skill_left_top {
                     min-height: 340px;
-                    padding: 1rem 0;
 
                     > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
                         font-size: 1.2rem;
                     }
 
                     ul {
                         li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
                             .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
                                 .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
                                     span {
-                                        width: 50%;
-                                        font-weight: 300;
                                         font-size: 0.875rem;
                                     }
                                 }
 
                                 .skill_level {
                                     width: 48%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
 
                                     span {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 20px;
                                         height: 20px;
-                                        background-color: transparent;
-                                        background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
                                     }
 
                                     .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 20px;
                                         height: 20px;
-                                        background-color: #b1c7ff;
                                     }
                                 }
                             }
@@ -2420,76 +1803,31 @@ aside {
 
                 .skill_right_top {
                     min-height: 340px;
-                    padding: 1rem 0;
 
                     > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
                         font-size: 1.2rem;
                     }
 
                     ul {
                         li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
                             .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
                                 .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
                                     span {
-                                        width: 50%;
-                                        font-weight: 300;
                                         font-size: 0.875rem;
                                     }
                                 }
 
                                 .skill_level {
                                     width: 48%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
                                     span {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 20px;
                                         height: 20px;
-                                        background-color: transparent;
                                         background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
                                     }
 
                                     .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 20px;
                                         height: 20px;
-                                        background-color: #b1c7ff;
                                     }
                                 }
                             }
@@ -2499,76 +1837,31 @@ aside {
 
                 .skill_right_bottom {
                     min-height: 340px;
-                    padding: 1rem 0;
 
                     > p {
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                        color: #5786ff;
-                        border-top: 2px solid #5786ff;
-                        font-weight: 300;
                         font-size: 1.2rem;
                     }
 
                     ul {
                         li {
-                            margin: 0.5rem 0;
-                            border: 1px solid #b1c7ff;
-                            border-radius: 10px;
-                            box-shadow: 1px 1px 4px #b1c7ff;
-
                             .contents_box {
-                                width: 90%;
-                                margin: 0 auto;
-                                padding: 0.5rem 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
                                 .skill_name {
-                                    width: 40%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
-                                    p {
-                                        text-align: center;
-                                        width: 40%;
-
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
                                     span {
-                                        width: 50%;
-                                        font-weight: 300;
                                         font-size: 0.875rem;
                                     }
                                 }
 
                                 .skill_level {
                                     width: 48%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-
                                     span {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 20px;
                                         height: 20px;
-                                        background-color: transparent;
                                         background-size: 0px 0px;
-                                        border: 2px solid #b1c7ff;
                                     }
 
                                     .active {
-                                        border-radius: 6px;
-                                        display: inline-block;
                                         width: 20px;
                                         height: 20px;
-                                        background-color: #b1c7ff;
                                     }
                                 }
                             }
@@ -2580,44 +1873,26 @@ aside {
     }
 
     .project_page {
-        font-family: "dreamgotic";
-        width: 100%;
-        height: 100vh;
         margin-bottom: 50px;
         .color_box {
             width: 90%;
-            margin: 0 auto;
 
             p {
-                width: 100%;
-                font-family: "Blacksword";
-                font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 &::before {
                     content: "";
                     display: inline-block;
                     width: 30%;
-                    height: 2px;
-                    background-color: black;
                 }
                 &::after {
                     content: "";
                     display: inline-block;
                     width: 30%;
-                    height: 2px;
-                    background-color: black;
                 }
             }
         }
 
         .swiper {
-            width: 100%;
             height: 75%;
-            padding: 5rem 0;
             .swiper-button-prev,
             .swiper-button-next {
                 margin: 0;
@@ -2625,25 +1900,15 @@ aside {
             .swiper-slide {
                 .project_list {
                     width: 80%;
-                    height: 100%;
-                    margin: 0 auto;
                     padding: 1rem;
 
                     .pro_box {
-                        height: 100%;
                         padding: 1rem 0;
-                        display: flex;
-                        align-items: center;
                         justify-content: space-between;
-                        border: 4px dashed #d7e2ff;
-                        border-radius: 10px;
 
                         .pro_left {
                             width: 40%;
-                            height: 100%;
-                            display: flex;
                             align-items: center;
-                            flex-direction: column;
 
                             ul {
                                 min-height: 315px;
@@ -2653,14 +1918,6 @@ aside {
 
                                 li {
                                     position: absolute;
-                                    bottom: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    text-align: center;
-
                                     img {
                                         width: 200px;
                                     }
@@ -2669,64 +1926,27 @@ aside {
 
                             .btn_box {
                                 width: 44%;
-                                padding: 4px 0;
-                                margin: 14px 0px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-around;
-                                border-radius: 4px;
-                                background-color: rgba(215, 226, 255, 0.4);
-
-                                span {
-                                    display: inline-block;
-                                    color: #a5a5a5;
-                                    cursor:
-                                        url("./img_src/click.png") 5 5,
-                                        auto;
-
-                                    &:nth-of-type(1) {
-                                        width: 45%;
-                                        text-align: left;
-                                    }
-
-                                    &:nth-of-type(2) {
-                                        width: 45%;
-                                        text-align: right;
-                                    }
-                                }
                             }
                         }
 
                         .pro_right {
-                            font-weight: 200;
                             width: 57%;
                             height: 88%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-around;
 
                             b {
                                 padding: 1.2rem 0;
-                                display: inline-block;
                                 font-size: 1.3rem;
                             }
 
                             .pro_text {
-                                width: 90%;
                                 height: 90%;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: flex-start;
-                                flex-direction: column;
 
                                 .date {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .date_txt {
-                                        padding-left: 10px;
 
                                         span {
                                             font-size: 0.9rem;
@@ -2737,12 +1957,10 @@ aside {
 
                                 .language {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .language_txt {
-                                        padding-left: 10px;
 
                                         span {
                                             font-size: 0.9rem;
@@ -2754,12 +1972,10 @@ aside {
 
                                 .program {
                                     p {
-                                        color: #5786ff;
                                         font-size: 1.2rem;
                                     }
 
                                     .program_txt {
-                                        padding-left: 10px;
 
                                         span {
                                             font-size: 0.9rem;
@@ -2771,16 +1987,13 @@ aside {
 
                             .description {
                                 p {
-                                    color: #5786ff;
                                     font-size: 1.2rem;
                                 }
 
                                 .description_txt {
-                                    padding-left: 10px;
 
                                     span {
                                         font-size: 0.9rem;
-                                        line-height: 26px;
                                     }
                                 }
                             }
@@ -2792,135 +2005,68 @@ aside {
     }
 
     .contact_page {
-        font-family: "dreamgotic";
-        width: 100%;
         height: 56vh;
-        position: relative;
 
         .color_box {
             width: 90%;
-            margin: 0 auto;
 
             p {
                 width: 100%;
-                font-family: "Blacksword";
-                font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 &::before {
                     content: "";
                     display: inline-block;
                     width: 30%;
-                    height: 2px;
-                    background-color: black;
                 }
                 &::after {
                     content: "";
                     display: inline-block;
                     width: 30%;
-                    height: 2px;
-                    background-color: black;
                 }
-            }
-        }
-
-        .flip.on {
-            transform: rotateY(180deg);
-
-            .back {
-                transform: rotateY(180deg);
             }
         }
 
         .flip {
             width: 65%;
             height: 80%;
-            margin: 5rem auto;
-            transition: all 0.5s;
-            transform-style: preserve-3d;
-            position: relative;
-            cursor:
-                url("./img_src/click.png") 5 5,
-                auto;
-
             .back {
-                width: 100%;
-                height: 100%;
-                border: 2px dashed #a1bbff;
-                background-color: #f9fbff;
                 padding: 3rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
 
                 p {
                     width: 65%;
-
-                    img {
-                        width: 100%;
-                    }
                 }
             }
 
             .front {
-                height: 100%;
-                border: 2px dashed #a1bbff;
-                background-color: #f9fbff;
-                padding: 2rem;
-                display: flex;
-                align-items: center;
                 justify-content: space-between;
-                backface-visibility: hidden;
-                position: absolute;
-                top: 0;
 
                 .con_left {
-                    font-weight: 200;
                     width: 60%;
-                    height: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
 
                     b {
-                        display: inline-block;
                         font-size: 1.3rem;
                     }
 
                     .con_text {
-                        width: 100%;
                         height: 65%;
-                        display: flex;
                         justify-content: space-around;
-                        align-items: flex-start;
-                        flex-direction: column;
 
                         .email {
                             p {
-                                color: #5786ff;
                                 font-size: 1.2rem;
                             }
 
                             span {
                                 font-size: 0.9rem;
-                                padding-left: 10px;
                             }
                         }
 
                         .Github {
                             p {
-                                color: #5786ff;
                                 font-size: 1.2rem;
                             }
 
                             span {
                                 font-size: 0.9rem;
-                                padding-left: 10px;
                             }
                         }
                     }
@@ -2931,8 +2077,6 @@ aside {
 
                     p {
                         width: 100%;
-                        text-align: center;
-
                         img {
                             width: 100%;
                         }
