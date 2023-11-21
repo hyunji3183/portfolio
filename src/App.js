@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Page from './comp/Page';
 import About from './comp/About';
@@ -11,7 +11,7 @@ import Intro_2 from './comp/Intro_2';
 function App() {
     return (
         <>
-            <BrowserRouter basename='/portfolio'>
+            <HashRouter basename='/portfolio'>
                 <Routes>
                     <Route path="/" element={<Intro_2 />} />
                     <Route path="/page" element={<Page />} />
@@ -20,7 +20,7 @@ function App() {
                     <Route path="/project" element={<Project />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 }
