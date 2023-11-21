@@ -11,7 +11,7 @@ import Intro_2 from './comp/Intro_2';
 function App() {
     return (
         <>
-            <HashRouter basename='/portfolio'>
+            <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Intro_2 />} />
                     <Route path="/page" element={<Page />} />
@@ -20,7 +20,7 @@ function App() {
                     <Route path="/project" element={<Project />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </>
     );
 }
