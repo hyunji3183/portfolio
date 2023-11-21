@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import Inview from './Inview';
 
 function Skill() {
     const [data, setData] = useState('')
+    const componentRef = useRef();
+
+
     useEffect(() => {
         axios.get('/skill.json')
             .then(res => {
@@ -11,8 +14,45 @@ function Skill() {
             })
     }, []);
 
+
+    const addActiveClassWithDelay = (elements) => {
+        elements.forEach((element, index) => {
+            setTimeout(() => {
+                element.classList.add('actives');
+            }, index * 130);
+        });
+    };
+
+    const handleIntersection = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillLeftTopElements = document.querySelectorAll('.skill_left_top .active');
+                const skillRightTopElements = document.querySelectorAll('.skill_right_top .active');
+                const skillRightBottomElements = document.querySelectorAll('.skill_right_bottom .active');
+
+                addActiveClassWithDelay(skillLeftTopElements);
+                addActiveClassWithDelay(skillRightTopElements);
+                addActiveClassWithDelay(skillRightBottomElements);
+            }
+        });
+    };
+
+useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.3,
+        });
+
+        if (componentRef.current) {
+            observer.observe(componentRef.current);
+        }
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [data]);
+
     return (
-        <section className='skill_page' id='skill'>
+        <section className='skill_page' id='skill' ref={componentRef}>
             <div className='color_box'>
                 <p>skill</p>
             </div>

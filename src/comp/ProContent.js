@@ -1,26 +1,42 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
-function ProContent({item}) {
-    
+function ProContent({ item }) {
+
     const ref = useRef(null);
-
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [slide, setSlide] = useState(0);
+    
     const handlePage = (type) => {
-        const offsetWidth = ref.current.offsetWidth; // 너비 가져오기
+        const lastIndex = item.image.length - 1;
         switch (type) {
             case 'next':
-                if (ref.current && (item.image.length - 1) * offsetWidth > slide) {
-                    setSlide(slide + offsetWidth); // right 속성 값 업데이트
-                }
+                setCurrentIndex((prevIndex) =>
+                    prevIndex < lastIndex ? prevIndex + 1 : 0
+                );
+                break;
+            case 'prev':
+                setCurrentIndex((prevIndex) =>
+                    prevIndex > 0 ? prevIndex - 1 : lastIndex
+                );
                 break;
             default:
-                if (ref.current && slide) {
-                    setSlide(slide - offsetWidth); // left 속성 값 업데이트
-                    break;
-                }
+                break;
         }
-    }
+    };
 
+    useEffect(() => {
+        setSlide(currentIndex * ref.current.offsetWidth);
+    }, [currentIndex]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handlePage('next');
+        }, 1500);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [currentIndex]);
 
     return (
         <>

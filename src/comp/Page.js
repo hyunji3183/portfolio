@@ -82,20 +82,22 @@ function Page() {
             <Project />
             <Contact />
             <div className='bubble_box'>
-                <span className='blue_ball b4'></span>
-                <span className='blue_ball b7'></span>
-                <span className='blue_ball b6'></span>
-                <span className='blue_ball b3'></span>
-                <span className='blue_ball b1'></span>
-                <span className='blue_ball b2'></span>
                 <span className='blue_ball b5'></span>
-                <span className='blue_ball b4'></span>
                 <span className='blue_ball b7'></span>
                 <span className='blue_ball b2'></span>
-                <span className='blue_ball b3'></span>
-                <span className='blue_ball b6'></span>
-                <span className='blue_ball b5'></span>
+                <span className='blue_ball b8'></span>
+                <span className='blue_ball b9'></span>
+                <span className='blue_ball b4'></span>
                 <span className='blue_ball b1'></span>
+                <span className='blue_ball b3'></span>
+                <span className='blue_ball b10'></span>
+                <span className='blue_ball b6'></span>
+                <span className='blue_ball b7'></span>
+                <span className='blue_ball b2'></span>
+                <span className='blue_ball b8'></span>
+                <span className='blue_ball b9'></span>
+                <span className='blue_ball b4'></span>
+                
             </div>
             <aside>
                 <p className={showButton ? 'on' : ''} onClick={scrollToTop}><img src={top} alt="" /></p>

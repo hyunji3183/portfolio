@@ -11,8 +11,7 @@ import Intro_2 from './comp/Intro_2';
 function App() {
     return (
         <>
-          //basename='/portfolio'
-            <BrowserRouter>
+            <BrowserRouter basename='/portfolio'>
                 <Routes>
                     <Route path="/" element={<Intro_2 />} />
                     <Route path="/page" element={<Page />} />
