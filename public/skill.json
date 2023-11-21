@@ -84,7 +84,7 @@
         },
         {
             "id": 4,
-            "icon": "/img/skill_icon/Github.png",
+            "icon": "/img/skill_icon/github.png",
             "name": "Github",
             "state": 3
         }
