@@ -31,7 +31,7 @@ function ProContent({ item }) {
     useEffect(() => {
         const interval = setInterval(() => {
             handlePage('next');
-        }, 1500);
+        }, 1700);
 
         return () => {
             clearInterval(interval);
