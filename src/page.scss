@@ -2345,7 +2345,7 @@ aside {
                     }
 
                     span {
-                        line-height: 1.5rem;
+                        line-height: 20px;
                         display: inline-block;
                         padding: 0.5rem 0;
                         font-size: 0.75rem;
@@ -2365,7 +2365,8 @@ aside {
                         flex-direction: column;
 
                         span {
-                            padding: 0rem 0;
+                            line-height: 20px;
+                            padding: 0.2rem 0;
                             font-size: 0.75rem;
                             font-weight: 200;
                         }
