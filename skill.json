@@ -52,15 +52,15 @@
         },
         {
             "id": 5,
-            "icon": "/img/skill_icon/mysql.png",
-            "name": "mySQL",
-            "state": 3
+            "icon": "/img/skill_icon/express.png",
+            "name": "express",
+            "state": 2
         },
         {
             "id": 6,
-            "icon": "/img/skill_icon/git.png",
-            "name": "Git",
-            "state": 2
+            "icon": "/img/skill_icon/mysql.png",
+            "name": "mySQL",
+            "state": 3
         }
     ],
     "etc": [
@@ -84,7 +84,7 @@
         },
         {
             "id": 4,
-            "icon": "/img/skill_icon/Github.png",
+            "icon": "/img/skill_icon/github.png",
             "name": "Github",
             "state": 3
         }

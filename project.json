@@ -1,6 +1,38 @@
 [
     {
         "id": "1",
+        "name": "Today's_meal",
+        "Production": "2023.12.01 - 2023.02.10",
+        "back_img": "/img/project/today_s_meal_back.png",
+        "image": [
+            "/img/project/today's_meal_1.png",
+            "/img/project/today's_meal_2.png",
+            "/img/project/today's_meal_3.png",
+            "/img/project/today's_meal_4.png",
+            "/img/project/today's_meal_5.png"
+        ],
+        "Language": [
+            "Visual studio code,",
+            "Next.js,",
+            "SCSS,",
+            "SCRIPT,",
+            "MongoDB,"
+        ],
+        "program": [
+            "figma,",
+            "notion,",
+            "Github"
+        ],
+        "description": "트레이너와 회원 간 상호작용으로 건강한 식단 관리 및 공유와 소통을 통하여 건강한 목표를 달성하는 동기부여를 위해 제작하였습니다.",
+        "Trouble": [
+            "다른 페이지에서 mainlist로 이동할 때 이동이 두번 이뤄지는 이슈가 발생, 컴포넌트 이동으로 해결",
+            "코드상 문제는 없어보이나 식단리스트의 로딩이 지나치게 느린 이슈 발생, 이미지의 base64 코드를 blob으로 짧게 줄여도 동일한 증상 발생되어 DB에 최초 이미지 저장시 크기를 줄이고 압축해서 저장하여 해결하였습니다.",
+            "useRouter 훅을 사용하려는데 ‘NextRouter was not mounted.’ 오류 발생, 12버전까지는 useRouter를 이용해 pathname 과 quary값 전송을 통하여 페이지를 이동시킬 수 있었으나 13버전 이상부터는 해당 기능 미지원되는것을 확인. usePathname() useSearchParams() 훅을 사용해서 해결"
+        ],
+        "url": "https://today-s-meal.vercel.app/"
+    },
+    {
+        "id": "2",
         "name": "My_Portfolio",
         "Production": "2023.11.01 - 2023.11.17",
         "back_img": "/img/project/portfolio_back.png",
@@ -12,6 +44,7 @@
             "/img/project/portfolio_5.png"
         ],
         "Language": [
+            "Visual studio code,",
             "React,",
             "SCSS,",
             "SCRIPT,",
@@ -31,7 +64,7 @@
         "url": "https://hyunji3183.github.io/sejong_remake/"
     },
     {
-        "id": "2",
+        "id": "3",
         "name": "디지몬 마인드 [D.M]",
         "Production": "2023.10.04 - 2023.10.19",
         "back_img": "/img/project/DM_back.png",
@@ -45,6 +78,7 @@
             "/img/project/DM_7.png"
         ],
         "Language": [
+            "Visual studio code,",
             "Next.js,",
             "SCSS,",
             "SCRIPT,",
@@ -68,7 +102,7 @@
         "url": "https://dm-ten-pearl.vercel.app/"
     },
     {
-        "id": "3",
+        "id": "4",
         "name": "project_zelda",
         "Production": "2023.09.11 - 2023.09.23",
         "back_img": "/img/project/zelda_back.png",
@@ -81,6 +115,7 @@
             "/img/project/zelda_6.png"
         ],
         "Language": [
+            "Visual studio code,",
             "React,",
             "SCSS,",
             "SCRIPT,",
@@ -100,7 +135,7 @@
         "url": "https://hyunji3183.github.io/project_zelda/"
     },
     {
-        "id": "4",
+        "id": "5",
         "name": "project_flix",
         "Production": "2023.09.02 - 2023.09.05",
         "back_img": "/img/project/flex_back.png",
@@ -111,12 +146,14 @@
             "/img/project/flix_4.png"
         ],
         "Language": [
+            "Visual studio code,",
             "React,",
             "SCSS,"
         ],
         "program": [
             "postman.com,",
-            "themoviedb.com"
+            "themoviedb.com,",
+            "Github"
         ],
         "description": "API를 활용하여 컨텐츠를 필터링하고 사용자에게 맞춤형 데이터를 제공하고자 제작하였습니다. 검색기능을 추가하여 접근성을 높였습니다.",
         "Trouble": [
@@ -127,7 +164,7 @@
         "url": "https://hyunji3183.github.io/movie/"
     },
     {
-        "id": "5",
+        "id": "6",
         "name": "remake_sejong",
         "Production": "2023.07.31 - 2023.09.01",
         "back_img": "/img/project/sejong_back.png",
@@ -139,6 +176,7 @@
             "/img/project/sejong_5.png"
         ],
         "Language": [
+            "Visual studio code,",
             "SCSS,",
             "SCRIPT,",
             "KAKAO API,",
@@ -158,5 +196,34 @@
             "이전에 노출된 썸네일 박스가 다른날짜로 옮겨져도 그대로 있는 이슈발생, 처리중입니다."
         ],
         "url": "https://hyunji3183.github.io/sejong_remake/"
+    },
+    {
+        "id": "7",
+        "name": "clone_devsisters",
+        "Production": "2023.06.19 - 2023.07.21",
+        "back_img": "/img/project/dev_back.png",
+        "image": [
+            "/img/project/dev_1.png",
+            "/img/project/dev_2.png",
+            "/img/project/dev_3.png",
+            "/img/project/dev_4.png",
+            "/img/project/dev_5.png",
+            "/img/project/dev_6.png"
+        ],
+        "Language": [
+            "Visual studio code,",
+            "SCSS,",
+            "SCRIPT,"
+        ],
+        "program": [
+            "Github"
+        ],
+        "description": "공부를 시작하고 처음 만들어 본 웹 페이지로 기존의 학습 내용을 사용해보고자 제작하였습니다.",
+        "Trouble": [
+            "Observer를 이용한 컨텐츠 및 배경 색상변화 시 불필요한 지점의 색상이 변화되는 이슈 발생,  영역에 들어올때와 나올때 모두 색상 변화되는것으로 파악되어 교차영역의 상단지점이 뷰포트를 벗어날때엔 배경색이 변화되지 않도록 조건 추가",
+            "swiperjs를 이용하여 autoplay + infinite loop + drag 효과를 부여해야하나 grouping 이슈로 autoplay 사용이 어려워지는 이슈발생. swiperjs로 infinite loop + drag 사용하여 loop효과와 drag를 부여하고, css를 이용한 Animation으로 autoplay처럼 보이는 효과를 줌",
+            "footer 내  컨텐츠에 form태그 사용시 스타일 명령을 적용하기 어려운 점 확인. 기존 devsisters 홈페이지 확인시 form태그가 아닌 div태그로 만들어진 컨텐츠임을 확인하여 추후 개선예정"
+        ],
+        "url": "https://hyunji3183.github.io/clone_project/"
     }
 ]
