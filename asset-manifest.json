@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.bddf6adc.css",
-    "main.js": "/static/js/main.83180b89.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/static/css/main.8c9284f2.css",
+    "main.js": "/static/js/main.64524d6f.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/NotoSansKR-Black.otf": "/static/media/NotoSansKR-Black.57ee16cda12f5e729a0a.otf",
     "static/media/NotoSansKR-Bold.otf": "/static/media/NotoSansKR-Bold.29abf35d525346faa333.otf",
     "static/media/NotoSansKR-Medium.otf": "/static/media/NotoSansKR-Medium.72ba455576ce8174ffa8.otf",
@@ -27,12 +27,12 @@
     "static/media/neodgm_code.woff2": "/static/media/neodgm_code.4639559c9a5a622b4aa7.woff2",
     "static/media/kakao_QR.png": "/static/media/kakao_QR.a38235335bfbb6dcd009.png",
     "index.html": "/index.html",
-    "main.bddf6adc.css.map": "/static/css/main.bddf6adc.css.map",
-    "main.83180b89.js.map": "/static/js/main.83180b89.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.8c9284f2.css.map": "/static/css/main.8c9284f2.css.map",
+    "main.64524d6f.js.map": "/static/js/main.64524d6f.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bddf6adc.css",
-    "static/js/main.83180b89.js"
+    "static/css/main.8c9284f2.css",
+    "static/js/main.64524d6f.js"
   ]
 }
